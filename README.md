@@ -7,8 +7,12 @@ I'm using the currently available janusgraph-0.1.1-hadoop2 distro available from
 
 Create the janusgraph-rest.service and janusgraph-websoc.service in /etc/systemd/system, ensuring that the ExecStart, ExecStop an PIDFile parameters point to the apropriate directories on your system.  It's pretty important to use the full path names where they are used in these files, Janusgraph and Gremlin server doesn't play well in some cases.  
 
-Type the following at the command promt:
-`sudo systemctl enable janusgraph-rest  
-sudo systemctl enable janusgraph-websoc  
-sudo systemctl start janusgraph-rest  
-sudo systemctl start janusgraph-websoc`
+Type the following at the command promt:  
+
+`sudo systemctl enable janusgraph-rest`  
+
+`sudo systemctl enable janusgraph-websoc`  
+
+`sudo systemctl start janusgraph-rest`  
+
+`sudo systemctl start janusgraph-websoc`
