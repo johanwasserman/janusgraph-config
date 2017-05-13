@@ -1,6 +1,6 @@
 ## Configuration and script files for Gremlin server and JanusGraph
 ### Supports gremlin server configs for both websockets and REST  
-
+### connecting to HBase on a Hortonworks sandbox
 Subdirectores are based on your JanusGraph base install directory.  These files assumes a base directory of /opt/janusgraph-0.1.1-hadoop2  
 
 I'm using the currently available janusgraph-0.1.1-hadoop2 distro available from [JanusGraph](https://github.com/JanusGraph/janusgraph/releases) with a mixin from information I got from the [TINKERPOP-(980)](https://github.com/apache/tinkerpop/pull/439) issue.  The latest gremlin-server.sh discussed there can be found [here](https://raw.githubusercontent.com/apache/tinkerpop/master/gremlin-server/src/main/bin/gremlin-server.sh)  
