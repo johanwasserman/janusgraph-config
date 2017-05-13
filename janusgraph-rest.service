@@ -1,0 +1,13 @@
+[Unit]
+Description=Apache TinkerPop Gremlin Server RESTful daemon
+Documentation=http://tinkerpop.apache.org/
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/opt/janusgraph-0.1.1-hadoop2/bin/gremlin-server-rest.sh start
+ExecStop=/opt/janusgraph-0.1.1-hadoop2/bin/gremlin-server-rest.sh stop
+PIDFile=/opt/janusgraph-0.1.1-hadoop2/run/gremlin-rest.pid
+
+[Install]
+WantedBy=multi-user.target
